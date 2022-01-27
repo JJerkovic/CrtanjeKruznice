@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrtanjeKruznice", "CrtanjeKruznice\CrtanjeKruznice.csproj", "{7976449A-0EF6-401A-8204-1A725C609118}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7976449A-0EF6-401A-8204-1A725C609118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7976449A-0EF6-401A-8204-1A725C609118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7976449A-0EF6-401A-8204-1A725C609118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7976449A-0EF6-401A-8204-1A725C609118}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD82A73C-CA7A-4C95-B345-273545038256}
+	EndGlobalSection
+EndGlobal
