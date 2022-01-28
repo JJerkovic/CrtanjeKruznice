@@ -45,7 +45,7 @@ namespace CrtanjeKruznice
         public static void IscrtajKruznicu(Graphics g)
         {
 
-            int r = Kruznica.Polumjer();
+            int r = Polumjer();
 
             // stranica kvadrata = promjer kruznice
             // koordinate kvadrata - pocetna tocka iscrtavanja je gore lijevo u odnosu na srediste kruznice
