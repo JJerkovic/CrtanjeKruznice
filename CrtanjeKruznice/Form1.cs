@@ -26,12 +26,10 @@ namespace CrtanjeKruznice
         
         public void Form1_Paint(object sender, PaintEventArgs e)
         {
-
         }
-        
+
         public void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            //Kruznica.srediste = MousePosition;
             Kruznica.srediste = this.PointToClient(MousePosition);
         }
 
@@ -39,7 +37,9 @@ namespace CrtanjeKruznice
         {
             Kruznica.obodnaTocka = this.PointToClient(MousePosition);
 
-            labelPromjer.Text = "Promjer kruznice = " + Kruznica.Promjer().ToString() + " Koordinate sredista: " + Kruznica.srediste.ToString();
+            labelOpseg.Text = "Opseg kruznice: " + Kruznica.Opseg().ToString();
+            labelPovrsina.Text = "Povrsina kruznice = " + Kruznica.Povrsina().ToString();
+
             Graphics g = this.CreateGraphics();
             Kruznica.IscrtajKruznicu(g);
         }

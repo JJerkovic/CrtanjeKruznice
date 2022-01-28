@@ -15,11 +15,29 @@ namespace CrtanjeKruznice
         public static Point srediste;
         public static Point obodnaTocka;
 
-        public static int Promjer()
+        public static int Polumjer()
         {
-            double promjer =  2*Math.Sqrt(Math.Pow((srediste.X - obodnaTocka.X), 2) + Math.Pow((srediste.Y - obodnaTocka.Y), 2));
+            double polumjer =  Math.Sqrt(Math.Pow((srediste.X - obodnaTocka.X), 2) + Math.Pow((srediste.Y - obodnaTocka.Y), 2));
 
-            return (int)promjer;
+            return (int)polumjer;
+        }
+
+        public static float Opseg()
+        {
+            int r = Polumjer();
+
+            double opseg = 2 * r * Math.PI;
+            
+            return (float)opseg;
+        }
+
+        public static float Povrsina()
+        {
+            int r = Polumjer();
+
+            double povrsina = (Math.Pow(r, 2)) * Math.PI;
+
+            return (float)povrsina;
         }
 
         // metoda IscrtajKruznicu
@@ -27,11 +45,11 @@ namespace CrtanjeKruznice
         public static void IscrtajKruznicu(Graphics g)
         {
 
-            int promjer = Kruznica.Promjer();
+            int r = Kruznica.Polumjer();
 
             // stranica kvadrata = promjer kruznice
             // koordinate kvadrata - pocetna tocka iscrtavanja je gore lijevo u odnosu na srediste kruznice
-            Rectangle kvadrat = new Rectangle((srediste.X - promjer/2), (srediste.Y - promjer / 2), promjer, promjer);
+            Rectangle kvadrat = new Rectangle((srediste.X - r), (srediste.Y - r), 2*r, 2*r);
 
             // iscrtaj kruznicu
             g.DrawEllipse(Pens.Black, kvadrat);
